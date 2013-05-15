@@ -1,14 +1,14 @@
 ---
 layout: default
 ---
-<div class="hero-unit row">
+<div class="hero-unit"><div class="row-fluid">
   {% if page.img %}
-    <span class="span4 thumbnail"><img src="{{ page.img }}" alt="" /></span>
-    <h1 class="span4">{{ page.title }} <small>{{ page.date | date_to_string }}</small></h1>
+    <span class="span5 thumbnail"><img src="{{ page.img }}" alt="" /></span>
+    <h1 class="span7">{{ page.title }} <small>{{ page.date | date_to_string }}</small></h1>
   {% else %}
-    <h1>{{ page.title }} <small>{{ page.date | date_to_string }}</small></h1>
+    <h1 class="span12">{{ page.title }} <small>{{ page.date | date_to_string }}</small></h1>
   {% endif %}
-</div>
+</div></div>
 <div class="container row-fluid">
   <div class="span6 offset2">
     <div>{{ content }}</div>
