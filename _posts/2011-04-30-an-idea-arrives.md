@@ -3,6 +3,7 @@ layout: post
 title: An Idea Arrives
 date: 2011-04-30 13:36:00
 img: http://farm6.static.flickr.com/5229/5668642292_5005678cc4.jpg
+exerpt: "In my quest for code adventure, I&#8217;ve decided to engage in a project with no practical purpose for anybody else. It has been a long time since I have taken a project to completion. Humor me in this absolutely pointless project; I know that I could probably solve my made-up problem with a <a href=\"http://www.sharpie.com/enUS/Products/Pages/ProductDetails.aspx?pid=SharpieChiselTipPermanentMarker(Sharpie%20Catalog)\" title=\"Sharpie\">Sharpie</a>, but that would not be in the spirit of <a href=\"http://www.rubegoldberg.com/?page=gallery&amp;sms_ss=blogger&amp;at_xt=4dbc7d1647927fd9%2C0\">Rube Goldberg</a>."
 ---
 
 In my quest for code adventure, I&#8217;ve decided to engage in a project with no practical purpose for anybody else. It has been a long time since I have taken a project to completion. Humor me in this absolutely pointless project; I know that I could probably solve my made-up problem with a <a href="http://www.sharpie.com/enUS/Products/Pages/ProductDetails.aspx?pid=SharpieChiselTipPermanentMarker(Sharpie%20Catalog)" title="Sharpie">Sharpie</a>, but that would not be in the spirit of <a href="http://www.rubegoldberg.com/?page=gallery&amp;sms_ss=blogger&amp;at_xt=4dbc7d1647927fd9%2C0">Rube Goldberg</a>.
