@@ -19,9 +19,9 @@ title: Home
         <div class="offset2 span3 thumbnail">
           <img src="{{post.img}}" alt="" />
         </div>
-        <div class="span3">
+        <div class="span5">
       {% else %}
-        <div class="span3 offset5">
+        <div class="span5 offset5">
       {% endif %}
         <h3><a href="{{ post.url }}">{{ post.title }}</a> <small>{{ post.date | date_to_string }}</small></h3>
         <p>{{ post.exerpt }}</p>
