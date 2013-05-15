@@ -1,0 +1,14 @@
+<div class="masthead">
+  <h2>{{ site.name }} <small>{{ page.title }}</small></h2>
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="container">
+        <ul class="nav">
+          <li {% if page.path == 'index.html' %}class="active"{% endif %}><a href="/index.html">Home</a></li>
+          <li {% if page.path == 'projects/index.html' %}class="active"{% endif %}><a href="/projects/">Projects</a></li>
+          <li {% if page.path == 'portfolio/index.html' %}class="active"{% endif %}><a href="/portfolio/">Portfolio</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,41 @@
+---
+layout: default
+title: Home
+---
+{% for post in site.posts limit:1 %}
+<div class="hero-unit">
+  <h1>Latest from the Trenches</h1>
+  <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+  <p>{{ post.exerpt }}</p>
+  <p>
+    <a class="btn btn-primary btn-large" href="{{ post.url }}">Read More</a>
+  </p>
+</div>
+{% endfor %}
+<div class="container">
+  {% for post in site.posts limit:paginator.posts %}
+    <div class="row-fluid">
+      {% if post.img %}
+        <div class="offset2 span3 thumbnail">
+          <img src="{{post.img}}" alt="" />
+        </div>
+        <div class="span3">
+      {% else %}
+        <div class="span3 offset5">
+      {% endif %}
+        <h3><a href="{{ post.url }}">{{ post.title }}</a> <small>{{ post.date | date_to_string }}</small></h3>
+        <p>{{ post.exerpt }}</p>
+        <p><a class="btn" href="{{ post.url }}">Read More</a></p>
+      </div>
+    </div>
+    <hr />
+  {% endfor %}
+  <ul class="pager">
+    {% if paginator.previous_page_path %}
+      <li class="previous"><a href="{{ paginator.previous_page_path }}">Newer</a></li>
+    {% endif %}
+    {% if paginator.next_page_path %}
+      <li class="next"><a href="{{ paginator.next_page_path }}">Older</a></li>
+    {% endif %}
+  </ul>
+</div>

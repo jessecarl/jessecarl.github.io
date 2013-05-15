@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<div class="hero-unit row">
+  {% if page.img %}
+    <span class="span4 thumbnail"><img src="{{ page.img }}" alt="" /></span>
+    <h1 class="span4">{{ page.title }} <small>{{ page.date | date_to_string }}</small></h1>
+  {% else %}
+    <h1>{{ page.title }} <small>{{ page.date | date_to_string }}</small></h1>
+  {% endif %}
+</div>
+<div class="container row-fluid">
+  <div class="span6 offset2">
+    {{ content }}
+  </div>
+</div>
