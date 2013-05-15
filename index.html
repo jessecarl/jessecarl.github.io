@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Home
+title: Latest Rantings
 ---
 {% for post in site.posts limit:1 %}
 <div class="hero-unit">
-  <h1>Latest from the Trenches</h1>
+  <h1>{{ page.title }}</h1>
   <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
   <p>{{ post.exerpt }}</p>
   <p>
