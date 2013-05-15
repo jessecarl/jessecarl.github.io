@@ -73,6 +73,6 @@ examples:
       original = $this.attr('src');
       $this.data('src', original).attr('src', alternate);
     };
-    $('.thumbnails .thumbnail img').on({ mouseenter: switchImages, mouseleave: switchImages });
+    $('.thumbnail img').filter(function() { return typeof $(this).data('src') !== "undefined" }).on({ mouseenter: switchImages, mouseleave: switchImages });
   });
 </script>
