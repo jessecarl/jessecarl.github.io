@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Current Projects
+title: Projects
+icon: wrench
 projects:
   - name: pyFidelity
     status: canceled
@@ -36,7 +37,7 @@ projects:
         {% endcase %}
         {{ project.description | markdownify }}
       <p>
-        <a class="btn" href="http://github.com/jessecarl/{{ project.name }}/"><i class="icon-bookmark"></i> Fork</a>
+        <a class="btn" href="http://github.com/jessecarl/{{ project.name }}/"><i class="icon-code-fork"></i> Fork</a>
         <a class="btn" href="/{{ project.name }}/"><i class="icon-info-sign"></i> More…</a>
       </p>
     </div>

@@ -4,9 +4,15 @@
     <div class="navbar-inner">
       <div class="container">
         <ul class="nav">
-          <li {% if page.path == 'index.html' %}class="active"{% endif %}><a href="/index.html">Home</a></li>
-          <li {% if page.path == 'projects/index.html' %}class="active"{% endif %}><a href="/projects/">Projects</a></li>
-          <li {% if page.path == 'portfolio/index.html' %}class="active"{% endif %}><a href="/portfolio/">Portfolio</a></li>
+          <li {% if page.path == 'index.html' %}class="active"{% endif %}>
+            <a href="/"><i class="icon-book"></i> Latest Rantings</a>
+          </li>
+          <li {% if page.path == 'projects/index.html' %}class="active"{% endif %}>
+            <a href="/projects/"><i class="icon-wrench"></i> Projects</a>
+          </li>
+          <li {% if page.path == 'portfolio/index.html' %}class="active"{% endif %}>
+            <a href="/portfolio/"><i class="icon-briefcase"></i> Portfolio</a>
+          </li>
         </ul>
       </div>
     </div>

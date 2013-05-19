@@ -1,4 +1,6 @@
 name: Jesse's Code Adventures
 pygments: true
 safe: true
+paginate: 5
+path: "/"
 
