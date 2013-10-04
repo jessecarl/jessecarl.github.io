@@ -41,7 +41,7 @@ Let us look at the licenses for these databases:
   <dt>Drizzle</dt>
   <dd>Fork of MySQL &#8211; <a href="http://www.gnu.org/licenses/gpl.html" title="GPL">GPL</a></dd>
   <dt>Firebird</dt>
-  <dd>Non-standard open source <a href="http://www.firebirdsql.org/index.php?op=doc&id=ipl" title="license">license</a></dd>
+  <dd>Non-standard open source <a href="http://www.firebirdsql.org/en/licensing/" title="license">license</a></dd>
   <dt>SQL Server</dt>
   <dd>Microsoft</dd>
   <dt>MySQL</dt>
