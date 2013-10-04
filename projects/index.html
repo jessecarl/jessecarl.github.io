@@ -33,7 +33,7 @@ projects:
         {% when 'inactive' %}
           <span class="label label-warning"><i class="icon-white icon-question-sign"></i> {{ project.status }}</span>
         {% when 'active' %}
-          <span class="label label-success"><i class="icon-white icon-okay-sign"></i> {{ project.status }}</span>
+          <span class="label label-success"><i class="icon-white icon-ok-sign"></i> {{ project.status }}</span>
         {% endcase %}
         {{ project.description | markdownify }}
       <p>
