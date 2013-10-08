@@ -12,6 +12,7 @@ projects:
   - name: "go-pubsub"
     status: "active"
     description: "Playing around with concurrency in go. The interface is currently very clunky, but the basic concept is there. The package is used to set up to listen for messages from publishers, and relay those messages to subscribers."
+    buildStatus: true
 ---
 <div class="hero-unit">
   <h1>{{ page.title }}</h1>
@@ -35,6 +36,9 @@ projects:
         {% when 'active' %}
           <span class="label label-success"><i class="icon-white icon-ok-sign"></i> {{ project.status }}</span>
         {% endcase %}
+        {% if project.buildStatus == true %}
+          <a href="https://travis-ci.org/jessecarl/{{ project.name }}"><img src="https://travis-ci.org/jessecarl/{{ project.name }}.png" alt="Build Status" /></a>
+        {% endif %}
         {{ project.description | markdownify }}
       <p>
         <a class="btn" href="http://github.com/jessecarl/{{ project.name }}/"><i class="icon-code-fork"></i> Fork</a>
