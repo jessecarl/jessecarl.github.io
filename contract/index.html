@@ -1,0 +1,76 @@
+---
+layout: default
+title: Contract
+icon: tag
+blocks:
+  - date: '2013-12-09'
+    total_blocks: 4
+    reserved_blocks: 1
+  - date: '2013-12-16'
+    total_blocks: 1
+    reserved_blocks: 1
+  - date: '2013-12-23'
+    total_blocks: 2
+    reserved_blocks: 0
+  - date: '2013-12-30'
+    total_blocks: 2
+    reserved_blocks: 0
+  - date: '2014-01-06'
+    total_blocks: 4
+    reserved_blocks: 0
+  - date: '2014-01-13'
+    total_blocks: 0
+    reserved_blocks: 0
+  - date: '2014-01-20'
+    total_blocks: 0
+    reserved_blocks: 0
+  - date: '2014-01-27'
+    total_blocks: 1
+    reserved_blocks: 0
+  - date: '2014-02-03'
+    total_blocks: 4
+    reserved_blocks: 0
+  - date: '2014-02-10'
+    total_blocks: 4
+    reserved_blocks: 0
+  - date: '2014-02-17'
+    total_blocks: 0
+    reserved_blocks: 0
+  - date: '2014-02-24'
+    total_blocks: 0
+    reserved_blocks: 0
+  - date: '2014-03-03'
+    total_blocks: 4
+    reserved_blocks: 0
+  - date: '2014-03-10'
+    total_blocks: 0
+    reserved_blocks: 0
+---
+<div class="hero-unit">
+  <h1>{{page.title}}</h1>
+  <h2>Billing</h2>
+  <p>I am available for contract work. My billing structure is a little bit different, but I think it provides the best for both my clients and myself. Instead of billing by hour, I bill by block of effort. I note a block of effort as roughly equivalent to 10 billable hours. There are a number of reasons for eschewing billable hours for blocks of effort, but the simplest way to put it is that not all hours are equal. If there is a task that takes about four hours on a normal day, it may take only two on a good day, or eight on a bad day. That's a lot of volatility, and it's unfair to both the client and myself to be punished because of good days and bad days. Instead, we can focus on the value being created for the client, which is the finished task, and we can measure finished tasks in effort. This system is still being refined, but what system isn't.</p>
+  <dl>
+    <dt>I Bill</dt>
+    <dd>Blocks of effort <small>roughly 10 hours</small></dd>
+    <dt>They Cost</dt>
+    <dd>$500/block <small>one block minimum</small></dd>
+  </dl>
+  <p class="muted">If this billing structure is not acceptable, but you are still interested in my services, please do not hesitate to contact me. The spirit of my billing structure is flexibility, so I'm pretty flexible.</p>
+  <h2>Availability</h2>
+  <p>I make myself available for two to four blocks per week. See below for a rough estimate of my availability for the next several months. Note that some weeks will have no available blocks due to <a href="http://www.runboyrunband.com/">my other job</a>.</p>
+</div>
+{% for block in page.blocks %}
+  <div class="row-fluid">
+    <h3><small>week of</small> {{ block.date | date: "%b %d, %Y" }}</h3>
+    <h4>{{ block.total_blocks }} Blocks</h4>
+    <div class="progress">
+      {% if block.total_blocks > 0 %}
+        <div class="bar bar-danger" style="width: {{ block.reserved_blocks | times: 100 | divided_by: block.total_blocks }}%"></div>
+      {% else %}
+        <div class="bar bar-danger" style="width: 100%"></div>
+      {% endif %}
+    </div>
+  </div>
+{% endfor %}
+
