@@ -63,7 +63,7 @@ blocks:
 {% for block in page.blocks %}
   <div class="row-fluid">
     <h3><small>week of</small> {{ block.date | date: "%b %d, %Y" }}</h3>
-    <h4>{{ block.total_blocks }} Blocks</h4>
+    <h4>{{ block.total_blocks | minus: block.reserved_blocks }} of {{ block.total_blocks }} Block{% if block.total_blocks != 1 %}s{% endif %} Remaining</h4>
     <div class="progress">
       {% if block.total_blocks > 0 %}
         <div class="bar bar-danger" style="width: {{ block.reserved_blocks | times: 100 | divided_by: block.total_blocks }}%"></div>
