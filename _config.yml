@@ -1,4 +1,5 @@
 name: Jesse's Code Adventures
+markdown: redcarpet
 pygments: true
 safe: true
 paginate: 5
