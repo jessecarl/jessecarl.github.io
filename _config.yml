@@ -1,6 +1,6 @@
 name: Jesse's Code Adventures
 markdown: redcarpet
-pygments: true
+highlighter: pygments
 safe: true
 paginate: 5
 path: "/"
