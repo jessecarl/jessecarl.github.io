@@ -1,6 +1,10 @@
-name: Jesse's Code Adventures
+name: "Jesse Allen: Lazy Engineer"
 markdown: kramdown
 highlighter: rouge
 safe: true
+lsi: false
 gems:
   - jekyll-paginate
+sass:
+  sass_dir: _sass
+  style: compressed

@@ -1,23 +1,17 @@
-<div class="masthead">
-  <h2>{{ site.name }} <small>{{ page.title }}</small></h2>
-  <div class="navbar">
-    <div class="navbar-inner">
-      <div class="container">
-        <ul class="nav">
-          <li {% if page.path == 'index.html' %}class="active"{% endif %}>
-            <a href="/"><i class="icon-book"></i> Latest Rantings</a>
-          </li>
-          <li {% if page.path == 'projects/index.html' %}class="active"{% endif %}>
-            <a href="/projects/"><i class="icon-wrench"></i> Projects</a>
-          </li>
-          <li {% if page.path == 'portfolio/index.html' %}class="active"{% endif %}>
-            <a href="/portfolio/"><i class="icon-briefcase"></i> Portfolio</a>
-          </li>
-          <li {% if page.path == 'contract/index.html' %}class="active"{% endif %}>
-            <a href="/contract/"><i class="icon-tag"></i> Contract</a>
-          </li>
-        </ul>
-      </div>
-    </div>
+<header class="navigation" role="banner">
+  <div class="navigation-wrapper">
+    <a href="/" class="logo">
+      <img src="http://www.gravatar.com/avatar/055c5f84f186142804fba9393a35ca69" alt="{{ site.name }}">
+    </a>
+    <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
+    <nav role="navigation">
+      <ul id="js-navigation-menu" class="navigation-menu show">
+        <li class="nav-link"><a href="/services/">Services</a></li>
+        <li class="nav-link"><a href="/projects/">Projects</a></li>
+        <li class="nav-link"><a href="/blog/">Blog</a></li>
+        <li class="nav-link"><a href="/contact/">Contact</a></li>
+      </ul>
+    </nav>
   </div>
-</div>
+</header>
+

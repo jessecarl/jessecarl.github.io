@@ -6,63 +6,13 @@
     <title>{{ page.title }}</title>
     <meta name="viewport" content="width=device-width">
 
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/syntax.css">
-    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
-    <style type="text/css">
-      body {
-        padding-top: 20px;
-        padding-bottom: 60px;
-      }
-
-      .container {
-        margin: 0 auto;
-        max-width: 1000px;
-      }
-
-      .navbar .navbar-inner {
-        padding: 0;
-      }
-      .navbar .nav {
-        margin: 0;
-        display: table;
-        width: 100%;
-      }
-      .navbar .nav li {
-        display: table-cell;
-        width: 1%;
-        float: none;
-      }
-      .navbar .nav li a {
-        font-weight: bold;
-        text-align: center;
-        border-left: 1px solid rgba(255,255,255,0.75);
-        border-right: 1px solid rgba(0,0,0,.1);
-      }
-      .navbar .nav li:first-child a {
-        border-left: 0;
-        border-radius: 3px 0 0 3px;
-      }
-      .navbar .nav li:last-child a {
-        border-right: 0;
-        border-radius: 0 3px 3px 0;
-      }
-      .footer p a {
-        font-size: 28px;
-        line-height: 40px;
-      }
-    </style>
-    <link rel="stylesheet" href="/css/bootstrap-responsive.min.css">
-    <script src="http://code.jquery.com/jquery.js"></script>
+    <link rel="stylesheet" href="/css/main.css">
   </head>
   <body>
-    <div class="container">
-      {% include header.html %}
-      {{ content }}
-      {% include footer.html %}
-    </div> <!-- /container -->
-    <script src="/js/bootstrap.min.js"></script>
+    {% include header.html %}
+    {{ content }}
+    {% include footer.html %}
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
