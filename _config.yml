@@ -8,7 +8,7 @@ gems:
 sass:
   sass_dir: _sass
   style: compressed
-
+logo_url: http://www.gravatar.com/avatar/055c5f84f186142804fba9393a35ca69
 collections:
   services:
     output: true
