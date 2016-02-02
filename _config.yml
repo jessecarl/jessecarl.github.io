@@ -1,7 +1,6 @@
 name: Jesse's Code Adventures
-markdown: redcarpet
-highlighter: pygments
+markdown: kramdown
+highlighter: rouge
 safe: true
-paginate: 5
-path: "/"
-
+gems:
+  - jekyll-paginate
