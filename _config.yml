@@ -8,3 +8,9 @@ gems:
 sass:
   sass_dir: _sass
   style: compressed
+
+collections:
+  services:
+    output: true
+  projects:
+    output: true
