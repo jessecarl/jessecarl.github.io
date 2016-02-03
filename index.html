@@ -1,5 +1,6 @@
 ---
 layout: default
+body_class: home
 ---
 <section id="hero" class="hero">
   <div class="hero-inner">
@@ -17,6 +18,18 @@ layout: default
   </div>
 </section>
 <section id="services">
+  <h1>Services</h1>
+  <div class="service-items">
+    {% for service in site.services %}
+      <a href="{{ service.url }}" class="service-item">
+        {% if service.logo_src %}<img src="{{ service.logo_src }}" alt="">{% endif %}
+        <h1>{{ service.title }}</h1>
+        <p>{{ service.teaser }}</p>
+      </a>
+    {% endfor %}
+    <div class="right-cover"></div>
+    <div class="bottom-cover"></div>
+  </div>
 </section>
 <section id="projects">
 </section>
