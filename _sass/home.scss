@@ -128,96 +128,262 @@ $home-deep-brown: #72291b;
   width: (100% / 12) * $columns;
 }
 
-.home .service-items {
-  $base-background-color: white !default;
-  $dark-gray: #333 !default;
-  $light-gray: #DDD !default;
-  $medium-screen: em(640) !default;
-  $large-screen: em(860) !default;
-  $base-font-color: $dark-gray !default;
-  $grid-items-background: $base-background-color;
-  $grid-item-background: $base-background-color;
-  $grid-item-border: 1px solid transparentize($base-font-color, 0.8); 
-  $grid-item-columns: 4;
-  $grid-item-big-columns: 8;
-  $grid-item-color: $base-font-color;
-  $grid-item-height: 14em;
+.home .services {
+  $base-background-color: $dark-gray;
+  $base-font-color: white;
 
-  @include clearfix;
-  position: relative;
-    
-  .service-item {
-    @include transition (all 0.2s ease-in-out);
-    background: $grid-item-background;
-    border-bottom: $grid-item-border;
-    border-right: $grid-item-border;
-    cursor: pointer;
-    float: left;
-    height: $grid-item-height;
-    overflow: hidden;
-    outline: none;
-    padding: 2em;
-    text-decoration: none;
-    width: 100%;
+  padding-top: 2em;
+  padding-bottom: 3em;
+  background: $base-background-color;
+  color: $base-font-color;
 
-    @include media($large-screen) {
-      @include grid-item-columns($grid-item-columns);
-    }
-
-    &:focus,
-    &:hover {
-      background: transparentize($grid-item-color, 0.95);
-    }
+  .services-container {
+    @include outer-container;
   }
 
-  .service-item img {
+  h1 {
+    color: $base-font-color;
+  }
+
+  .service-items {
+    $base-background-color: white !default;
+    $dark-gray: #333 !default;
+    $light-gray: #DDD !default;
+    $medium-screen: em(640) !default;
+    $large-screen: em(860) !default;
+    $base-font-color: $dark-gray !default;
+    $grid-items-background: $base-background-color;
+    $grid-item-background: $base-background-color;
+    $grid-item-border: 1px solid transparentize($base-font-color, 0.8); 
+    $grid-item-columns: 4;
+    $grid-item-big-columns: 8;
+    $grid-item-color: $base-font-color;
+    $grid-item-height: 14em;
+
+    @include clearfix;
+    position: relative;
+
+    .service-item {
+      @include transition (all 0.2s ease-in-out);
+      background: $grid-item-background;
+      border-bottom: $grid-item-border;
+      border-right: $grid-item-border;
+      cursor: pointer;
+      float: left;
+      height: $grid-item-height;
+      overflow: hidden;
+      outline: none;
+      padding: 2em;
+      text-decoration: none;
+      width: 100%;
+
+      @include media($large-screen) {
+        @include grid-item-columns($grid-item-columns);
+      }
+
+      &:focus,
+      &:hover {
+        background: transparentize($grid-item-color, 0.95);
+      }
+    }
+
+    .service-item img {
       display: block;
       height: 2.5em;
       margin-bottom: 1.2em;
       opacity: 0.2;
     }
 
-  .service-item h1 {
+    .service-item h1 {
       color: $grid-item-color;
       font-size: 1.3em;
       margin-bottom: 0.4em;
     }
 
-  .service-item p {
+    .service-item p {
       color: transparentize($grid-item-color, 0.4);
       line-height: 1.5em;
-      
+
       @include media($medium-screen) {
         max-width: 70%;
       }
     }
 
-  .service-item-big {
-    @include media($large-screen) {
-      @include grid-item-columns($grid-item-big-columns);
+    .service-item-big {
+      @include media($large-screen) {
+        @include grid-item-columns($grid-item-big-columns);
+      }
+      p {
+        @include media($medium-screen) {
+          max-width: 60%;
+        }
+      }
     }
-    p {
-      @include media($medium-screen) {
-        max-width: 60%;
-      }  
+
+    // this, below, might not be the most beautiful solution but it removes the outer borders by using the background color.
+    .bottom-cover {
+      background: $grid-items-background;
+      bottom: 0px;
+      height: 3px;
+      position: absolute;
+      width: 100%;
     }
-  }
 
-  // this, below, might not be the most beautiful solution but it removes the outer borders by using the background color.
-  .bottom-cover {
-    background: $grid-items-background;
-    bottom: 0px;
-    height: 3px;
-    position: absolute;
-    width: 100%;
-  }
-
-  .right-cover {
-    background: $grid-items-background;
-    height: 100%;
-    position: absolute;
-    right: 0px;
-    width: 4px;
+    .right-cover {
+      background: $grid-items-background;
+      height: 100%;
+      position: absolute;
+      right: 0px;
+      width: 4px;
+    }
   }
 }
 
+.service article {
+  $base-border-radius: 3px !default;
+  $base-line-height: 1.5em !default;
+  $base-spacing: 1.5em !default;
+  $action-color: #477DCA !default;
+  $dark-gray: #333 !default;
+  $light-gray: #DDD !default;
+  $medium-screen: em(640) !default;
+  $base-font-color: $dark-gray !default;
+  $sans-serif: 'Noto Sans', sans-serif;
+  $serif: 'Radley', serif;
+
+  @include outer-container;
+  @include clearfix;
+  padding-top: 2em;
+  padding-bottom: 3em;
+  font-family: $sans-serif;
+  text-align: left;
+  
+  h1, h2, h3, p {
+    margin: 0;
+  }
+
+  hr {
+    border-bottom: 1px solid $light-gray;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    margin: $base-spacing 0;
+  }
+
+  p {
+    color: $base-font-color;
+    line-height: $base-line-height;
+  }
+
+  a {
+    color: $action-color;
+    text-decoration: none;
+  }
+
+  .type {
+    border-bottom: 2px solid;
+    display: inline-block;
+    font-family: $sans-serif;
+    font-size: .7em;
+    font-weight: 800;
+    margin-bottom: 2em;
+    padding: .1em 0;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  h1 {
+    font-family: $serif;
+    font-size: 1.9em;
+    font-weight: 700;
+    margin-bottom: 0.3em;
+
+    @include media($medium-screen) {
+      font-size: 2.6em;
+    }
+  }
+
+  h2 {
+    font-family: $serif;
+    font-size: 1.3em;
+    font-weight: 400;
+    line-height: 1.25em;
+    margin-bottom: .9em;
+
+    @include media($medium-screen) {
+      font-size: 1.5em;
+    }
+  }
+
+  code {
+    background: #F7F7F7;
+    border-radius: $base-border-radius * 1.5;
+    border: 1px solid #E0E0E0;
+    font-size: 0.75em;
+    font-style: normal;
+    padding: 0.1em 0.4em;
+    white-space: nowrap;
+  }
+
+  h2 code {
+    font-size: 0.65em;
+  }
+
+  h3 {
+    font-family: $serif;
+    font-size: 1.4em;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.3em;
+    margin-bottom: 0.4em;
+  }
+
+  p.date {
+    color: transparentize($base-font-color, 0.6);
+    font-family: $serif;
+    font-style: italic;
+    margin-bottom: .3em;
+  }
+
+  p {
+    font-family: $sans-serif;
+    letter-spacing: 1;
+    line-height: 1.55em;
+    margin-bottom: 1.5em;
+
+    span {
+      font-family: $serif;
+      font-size: 1.2em;
+      font-style: italic;
+    }
+  }
+  
+  a.read-more {
+    display: inline-block;
+    font-family: $sans-serif;
+    font-size: 0.8em;
+    font-weight: 700;
+    margin-left: 0.2em;
+    position: relative;
+    text-transform: uppercase;
+
+    span {
+      font-family: $sans-serif;
+      font-size: 1.5em;
+      font-style: normal;
+      position: absolute;
+      right: -12px;
+      top: -1px;
+    }
+  }
+
+  hr {
+    width: 3em;
+  }
+
+  p.author {
+    font-family: $serif;
+    font-size: 1.2em;
+    font-style: italic;
+  }
+}
