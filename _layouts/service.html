@@ -1,7 +1,21 @@
 ---
 layout: default
 ---
-<article>
-<h1>{{ page.title }}</h1>
-{{ content }}
-</article>
+{% include header.html %}
+<section id="service-info">
+  <aside class="all-services">
+    {% assign services = site.services | sort: 'weight' %}
+    {% for service in services %}
+      <a href="{{ service.url }}" class="service-item">
+        {% if service.logo_src %}<img src="{{ service.logo_src }}" alt="">{% endif %}
+        <span>{{ service.title }}</span>
+      </a>
+      {% endfor %}
+  </aside>
+  <article>
+    <h1>{{ page.title }}</h1>
+    {{ content }}
+  </article>
+</section>
+<section id="further-reading">
+</section>

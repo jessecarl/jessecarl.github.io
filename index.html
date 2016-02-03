@@ -2,6 +2,7 @@
 layout: default
 body_class: home
 ---
+{% include home-header.html %}
 <section id="hero" class="hero">
   <div class="hero-inner">
     <div class="hero-copy">
@@ -21,7 +22,8 @@ body_class: home
   <div class="services-container">
     <h1>Services</h1>
     <div class="service-items">
-      {% for service in site.services %}
+      {% assign services = site.services | sort: 'weight' %}
+      {% for service in services %}
         <a href="{{ service.url }}" class="service-item">
           {% if service.logo_src %}<img src="{{ service.logo_src }}" alt="">{% endif %}
           <h1>{{ service.title }}</h1>

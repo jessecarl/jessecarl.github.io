@@ -14,3 +14,10 @@ collections:
     output: true
   projects:
     output: true
+defaults:
+  - scope:
+      path: ""
+      type: "services"
+    values:
+      layout: service
+      body_class: service
