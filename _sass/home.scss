@@ -1,0 +1,128 @@
+$home-deep-blue: #95d5f1;
+$home-light-blue: #dbe9f5;
+$home-light-brown: #c78157;
+$home-deep-brown: #72291b;
+
+.hero {  
+  $base-border-radius: 3px !default;
+  $action-color: #477DCA !default;
+  $large-screen: em(860) !default;
+  $hero-background-top: $home-deep-blue;
+  $hero-background-bottom: $home-light-blue;
+  $hero-color: $dark-gray;
+  $gradient-angle: 10deg;
+  $hero-image: '/img/mountain-trail.jpg';
+
+  @include background(url($hero-image), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
+  background-color: #324766;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 3em;
+
+  .hero-logo img {
+    height: 4em;
+    margin-bottom: 1em;
+  }
+
+  .hero-inner {
+    @include outer-container;
+    @include clearfix;
+    margin: auto;
+    padding: 3.5em;
+    text-align: center;
+
+    .hero-copy {
+      text-align: center;
+      
+      h1 {
+        color: $hero-color;
+        font-size: 1.6em;
+        margin-bottom: 0.5em;
+
+        @include media($large-screen) {
+          font-size: 1.8em;
+        }
+      }
+
+      p {
+        color: $hero-color;
+        line-height: 1.4em;
+        margin: 0 auto 3em auto; 
+
+        @include media($large-screen) {
+          font-size: 1.1em;
+          max-width: 40%;
+        }
+      }
+    }
+  }
+}
+
+.side-image {
+  $base-line-height: 1.5em !default;
+  $action-color: #477DCA !default;
+  $dark-gray: #333 !default;
+  $large-screen: em(860) !default;
+  $base-font-color: $dark-gray !default;
+  $side-image-background-top: $dark-gray;
+  $side-image-background-bottom: $light-gray;
+  $side-image-content-background: $light-gray;
+  $side-image-border: 1px solid darken(transparentize($side-image-background-bottom, 0.8), 30%);
+
+  background: $side-image-content-background;
+
+  @include media($large-screen) {
+    @include row(table);
+  }
+
+  .images-wrapper {
+    @include background(url('/img/tools.jpg'), linear-gradient($side-image-background-top, $side-image-background-bottom), no-repeat $side-image-background-top scroll);
+    background-color: $side-image-background-top;
+    background-size: cover;
+    background-position: center;
+    border-bottom: $side-image-border;
+    display: block;
+    min-height: 12em;
+    padding: 3em;
+
+    @include media($large-screen) {
+      @include span-columns(4);
+      background-position: center;
+      background-size: cover;
+      border-right: $side-image-border;
+    }
+  }
+
+  .side-image-content {
+    @include span-columns(12);
+    padding: 1em 1em 4em 1em;
+
+    @include media($large-screen) {
+      @include span-columns(8);
+      padding: 4em 4em 8em 4em;
+    }
+
+    h1 {
+      margin-bottom: 0.9em;
+    }
+
+    h4 {
+      background: #BBB;
+      color: white;
+      display: inline-block;
+      font-size: 0.75em;
+      margin-bottom: 1.3em;
+      padding: 3px 8px;
+      text-transform: uppercase;
+    }
+
+    p {
+      color: $base-font-color;
+      line-height: $base-line-height;
+      margin-bottom: 3em;
+    }
+  }
+
+  @include reset-display();
+}
