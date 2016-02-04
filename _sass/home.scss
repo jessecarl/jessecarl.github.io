@@ -128,7 +128,7 @@ $home-deep-brown: #72291b;
   width: (100% / 12) * $columns;
 }
 
-.home .services {
+.services {
   $base-background-color: $dark-gray;
   $base-font-color: white;
 
@@ -242,6 +242,26 @@ $home-deep-brown: #72291b;
 .service section {
   @include outer-container;
   @include clearfix;
+  padding: 2em 1em 3em 1em;
+}
+
+.service aside {
+
+  @include media($large-screen) {
+    @include span-columns(3);
+  }
+
+  .service-link {
+    border-bottom: 1px solid transparentize($action-color, 0.8);
+    display: block;
+    margin-right: $base-spacing;
+    outline: none;
+    padding: ($base-spacing / 2) 0;
+
+    &:last-child {
+      margin-bottom: $base-spacing;
+    }
+  }
 }
 
 .service article {
@@ -257,16 +277,11 @@ $home-deep-brown: #72291b;
   $serif: $georgia;
 
   @include clearfix;
-  padding-top: 2em;
-  padding-bottom: 3em;
   font-family: $sans-serif;
   text-align: left;
 
-  @include span-columns(12);
-
   @include media($large-screen) {
-    @include span-columns(8);
-    @include shift(2);
+    @include span-columns(6);
   }
 
   h1, h2, h3, p {

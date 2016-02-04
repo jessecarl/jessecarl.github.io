@@ -5,7 +5,7 @@ layout: default
   <aside class="all-services">
     {% assign services = site.services | sort: 'weight' %}
     {% for service in services %}
-      <a href="{{ service.url }}" class="service-item">
+      <a href="{{ service.url }}" class="service-link">
         {% if service.logo_src %}<img src="{{ service.logo_src }}" alt="">{% endif %}
         <span>{{ service.title }}</span>
       </a>
@@ -15,6 +15,8 @@ layout: default
     <h1>{{ page.title }}</h1>
     {{ content }}
   </article>
-</section>
-<section id="further-reading">
+  <aside class="further-reading">
+    <!-- projects tagged with this service -->
+    <!-- blog posts tagged with this service -->
+  </aside>
 </section>
