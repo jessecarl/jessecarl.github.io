@@ -24,7 +24,13 @@ body_class: home
       {% assign services = site.services | sort: 'weight' %}
       {% for service in services %}
         <a href="{{ service.url }}" class="service-item">
-          {% if service.logo_src %}<img src="{{ service.logo_src }}" alt="">{% endif %}
+          <span class="fa-stack fa-lg">
+            {% assign i = 2 %}
+            {% for icon in service.icon_stack %}
+              <i class="fa fa-{{ icon }} fa-stack-{{ i }}x"></i>
+              {% assign i = i | minus: 1 %}
+            {% endfor %}
+          </span>
           <h1>{{ service.title }}</h1>
           <p>{{ service.teaser }}</p>
         </a>

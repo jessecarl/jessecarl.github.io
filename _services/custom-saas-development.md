@@ -3,6 +3,9 @@ title: Custom SaaS Development
 teaser: "Implementing custom solutions where stock software is too cumbersome."
 weight: 10
 category: sass
+icon_stack:
+  - cloud
+  - cogs
 ---
 
 <span>When the needs of your business do not line up with your software,

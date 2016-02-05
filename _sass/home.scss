@@ -158,7 +158,7 @@ $home-deep-brown: #72291b;
     $grid-item-columns: 4;
     $grid-item-big-columns: 8;
     $grid-item-color: $base-font-color;
-    $grid-item-height: 14em;
+    $grid-item-height: 16em;
 
     @include clearfix;
     position: relative;
@@ -187,11 +187,18 @@ $home-deep-brown: #72291b;
       }
     }
 
-    .service-item img {
+    .service-item span.fa-stack {
       display: block;
-      height: 2.5em;
-      margin-bottom: 1.2em;
-      opacity: 0.2;
+      height: 2em;
+      margin-bottom: 0.5em;
+      opacity: 0.6;
+
+      .fa-stack-2x {
+        color: $grid-item-color;
+      }
+      .fa-stack-1x {
+        color: $grid-item-background;
+      }
     }
 
     .service-item h1 {
@@ -413,3 +420,4 @@ $home-deep-brown: #72291b;
     font-style: italic;
   }
 }
+

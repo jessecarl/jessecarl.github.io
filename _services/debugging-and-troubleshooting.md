@@ -3,6 +3,9 @@ title: Debugging and Troubleshooting
 teaser: "Finding and fixing those troublesome and elusive bugs so it just works."
 weight: 100
 category: debugging
+icon_stack:
+  - cloud
+  - bug
 ---
 
 ##Sometimes you need to call in a specialist.
