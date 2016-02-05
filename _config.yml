@@ -13,7 +13,7 @@ collections:
   services:
     output: true
   projects:
-    output: false
+    output: true
 defaults:
   - scope:
       path: ""
@@ -21,3 +21,9 @@ defaults:
     values:
       layout: service
       body_class: service
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: project
+      body_class: project
