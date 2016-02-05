@@ -3,9 +3,7 @@ title: Web Consultation
 teaser: "Helping clients identify where web services can better align with business goals."
 weight: 1
 category: consulting
-icon_stack:
-  - cloud
-  - lightbulb-o
+icon: lightbulb-o
 ---
 
 <span>Web consultation services can be a tremendous value for a growing

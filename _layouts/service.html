@@ -6,7 +6,7 @@ layout: default
     {% assign services = site.services | sort: 'weight' %}
     {% for service in services %}
       <a href="{{ service.url }}" class="service-link">
-        {% if service.logo_src %}<img src="{{ service.logo_src }}" alt="">{% endif %}
+        <i class="fa fa-{{ service.icon }} fa-fw"></i>
         <span>{{ service.title }}</span>
       </a>
       {% endfor %}

@@ -17,29 +17,7 @@ body_class: home
     <p>Saying you are a lazy engineer might seem like a bad idea – after all, we recognize laziness as a vice, not a virtue. But for me, laziness is the fight against toil, busywork, and mindlessness. Being the right kind of lazy means finding ways to eliminate the work that my clients hate, so they can spend more time and energy on the work that they love. Sometimes the solution is technical; often it is human. I can help you find that solution for the work you hate. With a BS in Electrical Engineering and years of development experience, I'm prepared to take on the work you hate. After all, that's the work I love.</p>
   </div>
 </section>
-<section id="services" class="services">
-  <div class="services-container">
-    <h1>Services</h1>
-    <div class="service-items">
-      {% assign services = site.services | sort: 'weight' %}
-      {% for service in services %}
-        <a href="{{ service.url }}" class="service-item">
-          <span class="fa-stack fa-lg">
-            {% assign i = 2 %}
-            {% for icon in service.icon_stack %}
-              <i class="fa fa-{{ icon }} fa-stack-{{ i }}x"></i>
-              {% assign i = i | minus: 1 %}
-            {% endfor %}
-          </span>
-          <h1>{{ service.title }}</h1>
-          <p>{{ service.teaser }}</p>
-        </a>
-      {% endfor %}
-      <div class="right-cover"></div>
-      <div class="bottom-cover"></div>
-    </div>
-  </div>
-</section>
+{% include service-grid.html %}
 <section id="projects">
 </section>
 <section id="blog">

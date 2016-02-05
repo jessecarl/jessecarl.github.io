@@ -11,19 +11,4 @@ teaser: Balancing big-picture and detail-oriented thinking to tackle the problem
     </div>
   </div>
 </section>
-<section class="services">
-  <div class="services-container">
-    <div class="service-items">
-      {% assign services = site.services | sort: 'weight' %}
-      {% for service in services %}
-        <a href="{{ service.url }}" class="service-item">
-          {% if service.logo_src %}<img src="{{ service.logo_src }}" alt="">{% endif %}
-          <h1>{{ service.title }}</h1>
-          <p>{{ service.teaser }}</p>
-        </a>
-      {% endfor %}
-      <div class="right-cover"></div>
-      <div class="bottom-cover"></div>
-    </div>
-  </div>
-</section>
+{% include service-grid.html %}

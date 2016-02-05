@@ -1,0 +1,20 @@
+<section id="services" class="services">
+  <div class="services-container">
+    <h1>Services</h1>
+    <div class="service-items">
+      {% assign services = site.services | sort: 'weight' %}
+      {% for service in services %}
+        <a href="{{ service.url }}" class="service-item">
+          <span class="fa-stack fa-lg">
+            <i class="fa fa-cloud fa-stack-2x"></i>
+            <i class="fa fa-{{ service.icon }} fa-stack-1x"></i>
+          </span>
+          <h1>{{ service.title }}</h1>
+          <p>{{ service.teaser }}</p>
+        </a>
+      {% endfor %}
+      <div class="right-cover"></div>
+      <div class="bottom-cover"></div>
+    </div>
+  </div>
+</section>
