@@ -1,0 +1,37 @@
+---
+layout: default
+---
+<section id="project-basics" class="project-basics">
+  <div class="outer-container">
+    <div class="project-images">
+      {% for img in page.images %}
+        <img src="/img/projects/{{ img.src }}" class="project-image" alt="{{ img.alt }}" {% if img.animated %}data-src="/img/projects/{{ img.animated }}"{% endif %} />
+      {% endfor %}
+    </div>
+    <div class="project-info">
+      <h1>
+        {{ page.title }}
+        <small>
+          {% assign services = site.services | sort: 'weight' %}
+          {% for service in services %}
+            {% for s in page.services %}
+              {% if service.category == s %}
+                <i class="fa fa-{{ service.icon }}"></i>
+              {% endif %}
+            {% endfor %}
+          {% endfor %}
+        </small>
+      </h1>
+      <div class="project-links">
+        {% for url in page.links %}
+          <a href="{{url}}"><i class="fa fa-globe fa-fw"></i> {{url}}</a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+<section id="project-description" class="project-description">
+  <article>{{ content }}</article>
+</section>
+<section id="project-blog" class="further-reading">
+</section>

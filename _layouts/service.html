@@ -17,6 +17,22 @@ layout: default
   </article>
   <aside class="further-reading">
     <!-- projects tagged with this service -->
+    <div class="project-cards">
+      {% for project in site.projects %}{% for pserve in project.services %}{% if pserve == page.category %}
+        <div class="project-card">
+          <div class="project-card-image">
+            {% assign img = project.images | first %}
+            <a href="{{ project.url }}"><img src="/img/projects/{{ img.src }}" class="project-image" alt="{{ img.alt }}" {% if img.animated %}data-src="/img/projects/{{ img.animated }}"{% endif %} /></a>
+          </div>
+          <div class="project-card-header">
+            <a href="{{ project.url }}">{{ project.title }}</a>
+          </div>
+          <div class="project-card-copy">
+            {{ project.excerpt | markdownify }}
+          </div>
+        </div>
+      {% endif %}{% endfor %}{% endfor %}
+    </div>
     <!-- blog posts tagged with this service -->
   </aside>
 </section>

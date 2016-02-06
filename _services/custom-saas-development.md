@@ -2,7 +2,7 @@
 title: SaaS Development
 teaser: "Implementing custom solutions where stock software is too cumbersome."
 weight: 10
-category: sass
+category: saas
 icon: cogs
 ---
 

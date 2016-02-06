@@ -246,7 +246,8 @@ $home-deep-brown: #72291b;
   }
 }
 
-.service section {
+.service section,
+.project section.project-description {
   @include outer-container;
   @include clearfix;
   padding: 2em 1em 3em 1em;
@@ -272,6 +273,12 @@ $home-deep-brown: #72291b;
 }
 
 .service article {
+  @include media($large-screen) {
+    @include span-columns(6);
+  }
+}
+
+article {
   $base-border-radius: 3px !default;
   $base-line-height: 1.5em !default;
   $base-spacing: 1.5em !default;
@@ -286,10 +293,6 @@ $home-deep-brown: #72291b;
   @include clearfix;
   font-family: $sans-serif;
   text-align: left;
-
-  @include media($large-screen) {
-    @include span-columns(6);
-  }
 
   h1, h2, h3, p {
     margin: 0;
@@ -421,3 +424,165 @@ $home-deep-brown: #72291b;
   }
 }
 
+.project {
+  section {
+    @include clearfix;
+    @include padding(2em 1em 3em 1em);
+  }
+
+  .project-basics {
+    $base-background-color: white !default;
+    $dark-gray: #333 !default;
+    $light-gray: #DDD !default;
+    $medium-screen: em(640) !default;
+    $large-screen: em(860) !default;
+    $base-font-color: $dark-gray !default;
+    $project-basics-font-color: $base-font-color;
+
+    color: $project-basics-font-color;
+    @include background-image(linear-gradient(white, $light-gray));
+    border-bottom: 1px solid $light-gray;
+
+    .outer-container {
+      @include outer-container;
+    }
+
+    .project-images {
+
+      @include media($large-screen) {
+        @include span-columns(3);
+      }
+      @include media($medium-screen) {
+        @include span-columns(5);
+      }
+
+      img {
+        @include fill-parent;
+        @include background-image(linear-gradient($dark-gray, $light-gray));
+        @include padding(1px);
+      }
+    }
+
+    .project-info {
+
+      @include media($large-screen) {
+        @include span-columns(9);
+      }
+      @include media($medium-screen) {
+        @include span-columns(7);
+      }
+
+      h1 {
+        font-size: 3em;
+
+        small {
+          font-size: 0.5em;
+        }
+      }
+
+      .project-links {
+
+        a {
+          border-bottom: 1px solid transparentize($action-color, 0.8);
+          display: block;
+          outline: none;
+          padding: ($base-spacing / 2) 0;
+
+          &:last-child {
+            margin-bottom: $base-spacing;
+          }
+        }
+      }
+    }
+  }
+
+  .project-description {
+  }
+}
+
+.cards {
+  @include display(flex);
+  @include flex-wrap(wrap);
+  @include justify-content(space-between);
+}
+
+.project-card {
+  $base-border-color: $light-gray !default;
+  $base-border-radius: 3px !default;
+  $base-background-color: white !default;
+  $base-spacing: 1.5em !default;
+  $action-color: #477DCA !default;
+  $dark-gray: #333 !default;
+  $base-font-color: $dark-gray !default;
+  $project-card-border-color: $base-border-color;
+  $project-card-border: 1px solid $project-card-border-color;
+  $project-card-background: lighten($project-card-border-color, 10%);
+  $project-card-header-background: $project-card-background;
+  $project-card-margin: 1em;
+  $project-card-image-hover-opacity: 0.7;
+  $project-card-image-hover-color: $home-light-blue;
+
+  @include flex-basis(15em);
+  @include flex-grow(1);
+  @include transition (all 0.2s ease-in-out);
+  background-color: $project-card-background;
+  border-radius: $base-border-radius;
+  border: $project-card-border;
+  box-shadow: 0 2px 4px darken($base-background-color, 10%);
+  cursor: pointer;
+  margin: 0 $project-card-margin $base-spacing $project-card-margin;
+  position: relative;
+
+
+  .project-card-image {
+    overflow: hidden;
+    height: 150px;
+    max-height: 150px;
+    background-color: $project-card-image-hover-color;
+
+    img {
+      @include transition (all 0.2s ease-in-out);
+      border-top-left-radius: $base-border-radius;
+      border-top-right-radius: $base-border-radius;
+      width: 100%;
+      opacity: 1;
+    }
+  }
+
+  .project-card-header {
+    @include transition (all 0.2s ease-in-out);
+    background-color: $project-card-header-background;
+    border-bottom: $project-card-border;
+    border-radius: $base-border-radius $base-border-radius 0 0;
+    font-weight: bold;
+    line-height: 1.5em;
+    padding: ($base-spacing / 3) ($base-spacing / 2);
+  }
+
+  .project-card-copy {
+    font-size: 0.9em;
+    line-height: 1.5em;
+    padding: ($base-spacing / 2) ($base-spacing / 2);
+
+    p {
+      margin: 0 0 ($base-spacing / 2);
+    }
+  }
+
+  &:focus,
+  &:hover {
+    cursor: pointer;
+
+    img {
+      opacity: $project-card-image-hover-opacity;
+    }
+  }
+
+  &:active {
+    background-color: $project-card-background;
+
+    .card-header {
+      background-color: $project-card-background;
+    }
+  }
+}

@@ -5,8 +5,11 @@ excerpt_separator: <!--more-->
 services:
   - consulting
   - saas
-img: runboyrun
-url: http://www.runboyrunband.com
+images:
+  - src: runboyrun.jpg
+    alt: Run Boy Run
+    animated: runboyrun.gif
+links: http://www.runboyrunband.com
 ---
 
 I built this application for the band that was my primary occupation for a few

@@ -13,3 +13,18 @@ $(document).ready(function() {
   });
 });
 
+$(document).ready(function(){
+  var switchImages = function() {
+    var $this = $(this),
+    alternate = $this.data('src'),
+    original = $this.attr('src');
+    $this.data('src', original).attr('src', alternate);
+  };
+
+  $('img.project-image').filter(function() {
+    return typeof $(this).data('src') !== "undefined"
+  }).on({
+    mouseenter: switchImages,
+    mouseleave: switchImages
+  });
+});
