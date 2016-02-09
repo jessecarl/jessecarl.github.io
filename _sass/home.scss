@@ -3,7 +3,12 @@ $home-light-blue: #dbe9f5;
 $home-light-brown: #c78157;
 $home-deep-brown: #72291b;
 
-.hero {  
+section {
+  @include padding(2em 1em 3em 1em);
+  @include clearfix;
+}
+
+.hero {
   $base-border-radius: 3px !default;
   $action-color: #477DCA !default;
   $large-screen: em(860) !default;
@@ -34,7 +39,7 @@ $home-deep-brown: #72291b;
 
     .hero-copy {
       text-align: center;
-      
+
       h1 {
         color: $hero-color;
         margin-bottom: 0.5em;
@@ -132,8 +137,6 @@ $home-deep-brown: #72291b;
   $base-background-color: $dark-gray;
   $base-font-color: white;
 
-  padding-top: 2em;
-  padding-bottom: 3em;
   background: $base-background-color;
   color: $base-font-color;
 
@@ -249,8 +252,6 @@ $home-deep-brown: #72291b;
 .service section,
 .project section.project-description {
   @include outer-container;
-  @include clearfix;
-  padding: 2em 1em 3em 1em;
 }
 
 .service aside {
@@ -424,11 +425,23 @@ article {
   }
 }
 
-.project {
-  section {
-    @include clearfix;
-    @include padding(2em 1em 3em 1em);
+.projects {
+  $base-background-color: white !default;
+  $base-font-color: $dark-gray !default;
+
+  background: $base-background-color;
+  color: $base-font-color;
+
+  .projects-container {
+    @include outer-container;
   }
+
+  h1 {
+    color: $base-font-color;
+  }
+}
+
+.project {
 
   .project-basics {
     $base-background-color: white !default;
@@ -500,7 +513,7 @@ article {
   }
 }
 
-.cards {
+.project-cards {
   @include display(flex);
   @include flex-wrap(wrap);
   @include justify-content(space-between);

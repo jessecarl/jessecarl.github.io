@@ -1,0 +1,21 @@
+<section id="projects" class="projects">
+<div class="projects-container">
+  <h1>Projects</h1>
+  <div class="project-cards">
+    {% for project in site.projects %}
+      <div class="project-card">
+        <div class="project-card-image">
+          {% assign img = project.images | first %}
+          <a href="{{ project.url }}"><img src="/img/projects/{{ img.src }}" class="project-image" alt="{{ img.alt }}" {% if img.animated %}data-src="/img/projects/{{ img.animated }}"{% endif %} /></a>
+        </div>
+        <div class="project-card-header">
+          <a href="{{ project.url }}">{{ project.title }}</a>
+        </div>
+        <div class="project-card-copy">
+          {{ project.excerpt | markdownify }}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+</section>
