@@ -1,51 +1,14 @@
 ---
 layout: default
 title: Projects
-icon: wrench
-projects:
-  - name: pyFidelity
-    status: canceled
-    description: "pyFidelity is a Pylons application providing an in-depth, granular model of your vinyl record collection. You could use it for other media as well, but that wouldn't be nearly as fantastic."
-  - name: goDLX
-    status: canceled
-    description: "Package goDLX provides a Go implementation of Dancing Links Algorithm X by Donald Knuth.\n\nI'm attempting to follow the paper as exactly as possible to start. I can cater it a bit more to to Go way of solving the problem once the initial implementation is complete."
-  - name: "go-pubsub"
-    status: "canceled"
-    description: "Playing around with concurrency in go. The interface is currently very clunky, but the basic concept is there. The package is used to set up to listen for messages from publishers, and relay those messages to subscribers."
+teaser: "What I've built before and what I'm building now"
 ---
-<div class="hero-unit">
-  <h1>{{ page.title }}</h1>
-  <p>
-  The following are the current <a href="http://github.com">github</a> projects
-  under <a href="http://github.com/jessecarl/">my name</a>. Most are simple projects for the purpose of learning new technologies
-  or concepts. Some may be revived in the future, but only if they are useful in other
-  projects. I have some other active projects with <a href="http://github.com/lazyengineering">Lazy Engineering</a>, an organization currently consisting of just myself with an ongoing mission to destroy busy-work wherever it is found.
-  </p>
-</div>
-<div class="row-fluid">
-  {% for project in page.projects %}
-    <div class="span4">
-      <h2>{{ project.name }}</h2>
-      <p>
-        {% case project.status %}
-        {% when 'canceled' %}
-          <span class="label label-important"><i class="icon-white icon-exclamation-sign"></i> {{ project.status }}</span>
-        {% when 'inactive' %}
-          <span class="label label-warning"><i class="icon-white icon-question-sign"></i> {{ project.status }}</span>
-        {% when 'active' %}
-          <span class="label label-success"><i class="icon-white icon-ok-sign"></i> {{ project.status }}</span>
-        {% endcase %}
-        {% if project.buildStatus == true %}
-          <a href="https://travis-ci.org/jessecarl/{{ project.name }}"><img src="https://travis-ci.org/jessecarl/{{ project.name }}.png" alt="Build Status" /></a>
-        {% endif %}
-        {{ project.description | markdownify }}
-      <p>
-        <a class="btn" href="http://github.com/jessecarl/{{ project.name }}/"><i class="icon-code-fork"></i> Fork</a>
-        <a class="btn" href="/{{ project.name }}/"><i class="icon-info-sign"></i> More…</a>
-      </p>
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <h1>{{ page.title }}</h1>
+      <p>{{ page.teaser }}</p>
     </div>
-  {% if forloop.last != true %}
-  {% cycle '', '', '</div><div class="row-fluid">' %}
-  {% endif %}
-  {% endfor %}
-</div>
+  </div>
+</section>
+{% include project-cards.html %}
