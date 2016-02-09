@@ -23,7 +23,7 @@ section {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 3em;
+  @include padding(0 0 3em 0);
 
   .hero-logo img {
     height: 4em;
@@ -71,6 +71,7 @@ section {
   $side-image-border: 1px solid darken(transparentize($side-image-background-bottom, 0.8), 30%);
 
   background: $side-image-content-background;
+  @include padding(0 0 0 0);
 
   @include media($large-screen) {
     @include row(table);
