@@ -543,7 +543,6 @@ article {
   border-radius: $base-border-radius;
   border: $project-card-border;
   box-shadow: 0 2px 4px darken($base-background-color, 10%);
-  cursor: pointer;
   margin: 0 $project-card-margin $base-spacing $project-card-margin;
   position: relative;
 
@@ -585,7 +584,6 @@ article {
 
   &:focus,
   &:hover {
-    cursor: pointer;
 
     img {
       opacity: $project-card-image-hover-opacity;
@@ -595,8 +593,107 @@ article {
   &:active {
     background-color: $project-card-background;
 
-    .card-header {
+    .project-card-header {
       background-color: $project-card-background;
+    }
+  }
+}
+
+.blog {
+  $base-background-color: white !default;
+  $base-font-color: $dark-gray !default;
+  $blog-background-color: $base-font-color;
+  $blog-font-color: $base-background-color;
+
+  background: $blog-background-color;
+  color: $blog-font-color;
+
+  .blog-container {
+    @include outer-container;
+  }
+
+  h1 {
+    color: $blog-font-color;
+    a {
+      color: transparentize($blog-font-color, 0.1);
+    }
+  }
+}
+
+.blog-post-cards {
+}
+
+.blog-post-card {
+  $base-border-color: $light-gray !default;
+  $base-border-radius: 3px !default;
+  $base-background-color: white !default;
+  $base-spacing: 1.5em !default;
+  $action-color: #477DCA !default;
+  $dark-gray: #333 !default;
+  $base-font-color: $dark-gray !default;
+  $medium-screen: em(640) !default;
+  $large-screen: em(860) !default;
+  $blog-post-card-border-color: darken($dark-gray, 10%);
+  $blog-post-card-border: 1px solid $blog-post-card-border-color;
+  $blog-post-card-background: lighten($blog-post-card-border-color, 10%);
+  $blog-post-card-header-background: $blog-post-card-background;
+  $blog-post-card-margin: 1em;
+  $blog-post-card-image-hover-opacity: 0.5;
+  $blog-post-card-image-hover-color: $dark-gray;
+
+  @include outer-container;
+  @include clearfix;
+  @include transition (all 0.2s ease-in-out);
+  background-color: $blog-post-card-background;
+  border-radius: $base-border-radius;
+  border-bottom: $blog-post-card-border;
+  margin: 0 $blog-post-card-margin $base-spacing $blog-post-card-margin;
+
+  @include media($large-screen) {
+    @include span-columns(8);
+    @include shift(2);
+  }
+
+  .blog-post-card-image {
+    overflow: hidden;
+
+    @include media($medium-screen) {
+      @include span-columns(4);
+    }
+
+    img {
+      @include transition (all 0.2s ease-in-out);
+      border-top-left-radius: $base-border-radius;
+      border-top-right-radius: $base-border-radius;
+      width: 100%;
+      opacity: $blog-post-card-image-hover-opacity;
+    }
+  }
+
+  .blog-post-card-content {
+    padding: ($base-spacing / 2) ($base-spacing / 2);
+
+    @include media($medium-screen) {
+      @include span-columns(8);
+    }
+
+    p {
+      font-size: 0.9em;
+      line-height: 1.5em;
+      margin: 0 0 ($base-spacing / 2);
+    }
+
+    a.date {
+      color: white;
+    }
+  }
+
+  &:focus,
+  &:hover {
+    background-color: lighten($blog-post-card-background, 5%);
+
+    img {
+      opacity: 1;
     }
   }
 }

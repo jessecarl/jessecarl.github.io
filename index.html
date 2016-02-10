@@ -17,11 +17,24 @@ body_class: home
     <p>Saying you are a lazy engineer might seem like a bad idea – after all, we recognize laziness as a vice, not a virtue. But for me, laziness is the fight against toil, busywork, and mindlessness. Being the right kind of lazy means finding ways to eliminate the work that my clients hate, so they can spend more time and energy on the work that they love. Sometimes the solution is technical; often it is human. I can help you find that solution for the work you hate. With a BS in Electrical Engineering and years of development experience, I'm prepared to take on the work you hate. After all, that's the work I love.</p>
   </div>
 </section>
-{% include service-grid.html %}
-<section id="projects">
-{% include project-cards.html %}
+<section id="services" class="services">
+  <div class="services-container">
+    <h1>Services</h1>
+    {% include service-grid.html %}
+  </div>
 </section>
-<section id="blog">
+<section id="projects" class="projects">
+  <div class="projects-container">
+    <h1>Projects</h1>
+    {% include project-cards.html %}
+  </div>
+</section>
+<section id="blog" class="blog">
+  <div class="blog-container">
+    <h1>Blog</h1>
+    {% assign posts = site.posts %}
+    {% include blog-post-cards-one-row.html %}
+  </div>
 </section>
 <section id="contact">
 </section>

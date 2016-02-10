@@ -3,7 +3,7 @@ layout: post
 title: The Right Tool for the Job (Part IV)
 date: 2011-05-17 23:15:00
 img: /img/posts/decap.jpg
-exerpt: "This choice was really the first one I actually had to ruminate on. Once I wrote down my highest priority criteria for database engine selection, I was able to come to a clear conclusion. Let me take you through the process."
+excerpt: "This choice was really the first one I actually had to ruminate on. Once I wrote down my highest priority criteria for database engine selection, I was able to come to a clear conclusion. Let me take you through the process."
 ---
 
 ##Database

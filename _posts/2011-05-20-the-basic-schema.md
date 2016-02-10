@@ -3,7 +3,6 @@ layout: post
 title: The Basic Schema
 date: 2011-05-20 08:05:00
 img: /img/posts/basic-schema.jpg
-exerpt: "With some of the tools chosen, it is time to create my database schema, or something like it. Below is my first guess at what the basic organization should be. Notice that `Songs` and `Tracks` are separate. This reflects the reality of `Songs` being intangible objects while `Tracks` are physical manifestations of those `Songs`. `Tracks` are the shadows on the wall of the cave (thank you, Plato)."
 ---
 
 With some of the tools chosen, it is time to create my database schema, or
@@ -11,7 +10,7 @@ something like it. Below is my first guess at what the basic organization should
 be. Notice that `Songs` and `Tracks` are separate. This reflects the reality of
 `Songs` being intangible objects while `Tracks` are physical manifestations of
 those `Songs`. `Tracks` are the shadows on the wall of the cave (thank you,
-Plato).
+Plato).<!--more-->
 
 <div class="thumbnail">
   <img src="/img/posts/basic-schema.jpg" alt="First Approximation (fails some edge cases)" />

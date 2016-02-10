@@ -2,12 +2,11 @@
 layout: post
 title: Time to Dance
 date: 2012-05-09 21:42:00
-exerpt: "I&#8217;ll start by acknowledging  the fact that it has been *too long* since I have updated this blog. I got bored and had no collaborators for the [pyFidelity](/pyFidelity/) project, so I stopped."
 ---
 
 I&#8217;ll start by acknowledging  the fact that it has been *too long* since I
 have updated this blog. I got bored and had no collaborators for the
-[pyFidelity](/pyFidelity/) project, so I stopped.
+[pyFidelity](/pyFidelity/) project, so I stopped.<!--more-->
 
 I now have a new project to work on (this time with collaboration). I will not
 go into too much detail about the project but to say that it can be modeled as

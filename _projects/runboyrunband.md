@@ -1,7 +1,6 @@
 ---
 title: Run Boy Run Band Website
 category: runboyrunband
-excerpt_separator: <!--more-->
 services:
   - consulting
   - saas

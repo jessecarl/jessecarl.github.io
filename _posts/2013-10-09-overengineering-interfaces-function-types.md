@@ -2,13 +2,12 @@
 layout: post
 title: Overengineering, Interfaces, and Function Types
 date: 2013-10-09 16:15:00
-exerpt: "When I started the go-pubsub project, I was in love with Interfaces. I still am, but I found that the design I was coming up with for my package was getting clunky, and difficult to work with."
 ---
 
 When I started the [go-pubsub](http://github.com/jessecarl/go-pubsub) project,
 I was in love with [Interfaces](http://golang.org/ref/spec#Interface_types).
 I still am, but I found that the design I was coming up with for my package
-was getting clunky, and difficult to work with.
+was getting clunky, and difficult to work with.<!--more-->
 
 As I began building simple test `Publisher` and `Subscriber` types, I really
 felt the complexity was too great for what the package does. The first part of

@@ -1,0 +1,14 @@
+<div class="blog-post-card">
+  <div class="blog-post-card-content">
+    <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+    {{ post.excerpt | markdownify }}
+    <p class="blog-post-card-details">
+      <a href="{{ post.url }}" class="date">{{ post.date | date_to_string }}</a>
+    </p>
+  </div>
+  {% if post.img %}
+    <div class="blog-post-card-image">
+      <img src="{{ post.img }}" alt="{{ post.title }}" />
+    </div>
+  {% endif %}
+</div>

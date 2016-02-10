@@ -3,10 +3,9 @@ layout: post
 title: The Right Tool For The Job
 date: 2011-05-01 15:14:00
 img: /img/posts/execute.jpg
-exerpt: "I&#8217;m a firm believer in the aphorism above. So, in that spirit, I will now expose the process I used in choosing the tools for my project. At the risk of offending language zealots, I will be perfectly blunt; I can&#8217;t stand some of these languages, and I only put them here to belittle them."
 ---
 
-I&#8217;m a firm believer in the aphorism above. So, in that spirit, I will now expose the process I used in choosing the tools for my project. At the risk of offending language zealots, I will be perfectly blunt; I can&#8217;t stand some of these languages, and I only put them here to belittle them.
+I&#8217;m a firm believer in the aphorism above. So, in that spirit, I will now expose the process I used in choosing the tools for my project. At the risk of offending language zealots, I will be perfectly blunt; I can&#8217;t stand some of these languages, and I only put them here to belittle them.<!--more-->
 
 ##Part I: Language
 

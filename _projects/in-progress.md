@@ -1,7 +1,6 @@
 ---
 title: In Progress
 category: in-progress
-excerpt_separator: <!--more-->
 services:
   - consulting
   - saas

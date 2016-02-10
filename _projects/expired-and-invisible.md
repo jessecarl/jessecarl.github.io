@@ -1,7 +1,6 @@
 ---
 title: Expired and Invisible
 category: invisible
-excerpt_separator: <!--more-->
 services:
   - saas
   - debugging

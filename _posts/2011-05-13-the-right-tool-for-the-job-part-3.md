@@ -3,7 +3,7 @@ layout: post
 title: The Right Tool for the Job (Part III)
 date: 2011-05-13 18:55:00
 img: /img/posts/boondock.jpg
-exerpt: "In [part 1](/2011/05/01/the-right-tool-for-job.html), I explored language choice; in [part 2](/2011/05/10/the-right-tool-for-job-part-2.html), I explored framework choice; today, I will briefly discuss source control."
+excerpt: "In [part 1](/2011/05/01/the-right-tool-for-job.html), I explored language choice; in [part 2](/2011/05/10/the-right-tool-for-job-part-2.html), I explored framework choice; today, I will briefly discuss source control."
 ---
 ##Source Control
 

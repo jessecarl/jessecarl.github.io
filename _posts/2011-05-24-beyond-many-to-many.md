@@ -3,13 +3,12 @@ layout: post
 title: Beyond Many-To-Many
 date: 2011-05-24 22:01:00
 img: /img/posts/song-creator.jpg
-exerpt: "As I work through this project, I will be sharing some of what I think are interesting choices that I make. I have started building out the model classes as outlined in [The Basic Schema](/2011/05/20/the-basic-schema.html). The `Song`&#8211;`Creator` relationship was the first to be built."
 ---
 
 As I work through this project, I will be sharing some of what I think are
 interesting choices that I make. I have started building out the model classes
 as outlined in [The Basic Schema](/2011/05/20/the-basic-schema.html). The
-`Song`&#8211;`Creator` relationship was the first to be built.
+`Song`&#8211;`Creator` relationship was the first to be built.<!--more-->
 
 <div class="thumbnail">
   <img src="/img/posts/song-creator.jpg" alt="Song Creator" />

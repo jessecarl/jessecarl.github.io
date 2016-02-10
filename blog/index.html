@@ -3,3 +3,34 @@ layout: major
 title: Blog
 teaser: My latest rants and raves
 ---
+<section id="blog" class="blog">
+  <div class="blog-container">
+    {% assign posts = paginator.posts %}
+    {% include blog-post-cards-all.html %}
+    {% if paginator.total_pages > 1 %}
+      <div class="blog-post-pagination">
+        {% if paginator.previous_page %}
+          <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><i class="fa fa-arrow-left"></i> Prev</a>
+        {% else %}
+          <span><i class="fa fa-arrow-left"></i> Prev</span>
+        {% endif %}
+
+        {% for page in (1..paginator.total_pages) %}
+          {% if page == paginator.page %}
+            <em>{{ page }}</em>
+          {% elsif page == 1 %}
+            <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+          {% else %}
+            <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+          {% endif %}
+        {% endfor %}
+
+        {% if paginator.next_page %}
+          <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next <i class="fa fa-arrow-right"></i></a>
+        {% else %}
+          <span>Next <i class="fa fa-arrow-right"></i></span>
+        {% endif %}
+      </div>
+    {% endif %}
+  </div>
+</section>

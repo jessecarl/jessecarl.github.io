@@ -3,14 +3,13 @@ layout: post
 title: The Right Tool for the Job (Part II)
 date: 2011-05-10 21:26:00
 img: /img/posts/all-on-my-own.jpg
-exerpt: "In [Part I](/2011/05/01/the-right-tool-for-job.html), I spent time belittling all but the languages that make me happy ([Python](http://www.python.org/) and [Go](http://golang.org/)). I didn't explain exactly why I ultimately chose Python; in the end, the architecture/framework choice pushed me into the Python camp."
 ---
 In <a href="/2011/05/01/the-right-tool-for-job.html" title="Part I">Part I</a>,
 I spent time belittling all but the languages that make me happy
 (<a href="http://www.python.org/" title="Python">Python</a> and
 <a href="http://golang.org/" title="Go">Go</a>). I didn&#8217;t explain exactly
 why I ultimately chose Python; in the end, the architecture/framework choice
-pushed me into the Python camp.
+pushed me into the Python camp.<!--more-->
 
 In my investigation of possible architectures for this simple project, I think
 that I have finally cataloged all of the possible architectures for a web

@@ -3,7 +3,6 @@ layout: post
 title: Finishing the go-pubsub Package
 date: 2013-10-04 09:00:00
 img: /img/posts/go-pubsub.jpg
-exerpt: "Actually finishing something is important. It often occurs that a person is either a starter or a finisher. If you are a starter, you pop from one project to the next, spitting out big ideas and often pushing through key proof-of-concept implementations. Then you see something else that needs your brilliant touch, and the project you just started is left incomplete – a testimony to your inability to finish what you start. I don't understand finishers, as I'm not one of them, and while it seems a good idea to provide for them what I provided for starters, like myself, I have new things to talk about."
 ---
 
 Actually finishing something is important. It often occurs that a person is
@@ -13,7 +12,7 @@ implementations. Then you see something else that needs your brilliant touch, an
 the project you just started is left incomplete – a testimony to your inability to
 finish what you start. I don't understand finishers, as I'm not one of them, and
 while it seems a good idea to provide for them what I provided for starters, like
-myself, I have new things to talk about.
+myself, I have new things to talk about.<!--more-->
 
 I have a great number of incomplete projects, and even more I never even got
 around to starting. I don't have many finished projects. With that in mind,
