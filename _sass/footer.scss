@@ -3,8 +3,8 @@
   $action-color: #477DCA !default;
   $medium-screen: em(640) !default;
   $large-screen: em(860) !default;
-  $footer-background: white;
-  $footer-color: desaturate(darken($action-color, 20%), 30%);
+  $footer-color: white;
+  $footer-background: $dark-gray;
   $footer-link-color: transparentize($footer-color, 0.6);
   $footer-disclaimer-color: transparentize($footer-color, 0.6);
 
@@ -17,7 +17,10 @@
     text-align: center;
 
     img {
-      height: 3em;
+      height: 5em;
+      padding: 1em;
+      background: white;
+      border-radius: 3px;
     }
   } 
 
