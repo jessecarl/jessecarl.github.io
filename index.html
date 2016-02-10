@@ -19,19 +19,19 @@ body_class: home
 </section>
 <section id="services" class="services">
   <div class="services-container">
-    <h1>Services</h1>
+    <h1><a href="/services/" class="section-link">Services</a></h1>
     {% include service-grid.html %}
   </div>
 </section>
 <section id="projects" class="projects">
   <div class="projects-container">
-    <h1>Projects</h1>
+    <h1><a href="/projects/" class="section-link">Projects</a></h1>
     {% include project-cards.html %}
   </div>
 </section>
 <section id="blog" class="blog">
   <div class="blog-container">
-    <h1>Blog</h1>
+    <h1><a href="/blog/" class="section-link">Blog</a></h1>
     {% assign posts = site.posts %}
     {% include blog-post-cards-one-row.html %}
   </div>

@@ -8,6 +8,10 @@ section {
   @include clearfix;
 }
 
+.home h1 a.section-link {
+  color: inherit;
+}
+
 .hero {
   $base-border-radius: 3px !default;
   $action-color: #477DCA !default;
@@ -621,6 +625,7 @@ article {
 }
 
 .blog-post-cards {
+  @include clearfix;
 }
 
 .blog-post-card {
@@ -696,4 +701,8 @@ article {
       opacity: 1;
     }
   }
+}
+
+.blog-post-pagination {
+  text-align: center;
 }
