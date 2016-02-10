@@ -12,10 +12,10 @@ be. Notice that `Songs` and `Tracks` are separate. This reflects the reality of
 those `Songs`. `Tracks` are the shadows on the wall of the cave (thank you,
 Plato).<!--more-->
 
-<div class="thumbnail">
+<figure class="thumbnail">
   <img src="/img/posts/basic-schema.jpg" alt="First Approximation (fails some edge cases)" />
-  <h4>First Approximation (fails some edge cases)</h4>
-</div>
+  <figcaption>First Approximation (fails some edge cases)</figcaption>
+</figure>
 
 The relationships shown above are oversimplified, despite being about as much
 information as provided by most other methods for storing this kind of data.
@@ -23,9 +23,9 @@ Let&#8217;s dig deeper into these relationships.
 
 ##Song&#8211;Creator Relationship
 
-<div class="thumbnail">
+<figure class="thumbnail">
   <img src="/img/posts/song-creator.jpg" alt="Song Creator" />
-</div>
+</figure>
 
 Let&#8217;s first define a `Creator` as a person who is either a composer,
 lyricist, or both. The `Song_Creator` entity links `Creators` &#8211; who are
@@ -38,9 +38,9 @@ one-to-many relationship where `Song` has many `Song_Creators`.
 
 ##Song&#8211;Track Relationship
 
-<div class="thumbnail">
+<figure class="thumbnail">
   <img src="/img/posts/song-track.jpg" alt="Song Track" />
-</div>
+</figure>
 
 I&#8217;ve already outlined why these exist as separate entities. The
 relationship here is many-to-many to account for not only the many different
@@ -48,9 +48,9 @@ recordings of the same song but also to account for medleys.
 
 ##Album&#8211;Track Relationship
 
-<div class="thumbnail">
+<figure class="thumbnail">
   <img src="/img/posts/album-track.jpg" alt="Album Track" />
-</div>
+</figure>
 
 It is already assumed that `Albums` can have multiple `Tracks`, but we also
 assert that `Tracks` can be released on multiple albums (ex. singles,
@@ -60,9 +60,9 @@ but they could easily be rolled into the `Album_Track` entity as a property.
 
 ##Performer&#8211;Track Relationship
 
-<div class="thumbnail">
+<figure class="thumbnail">
   <img src="/img/posts/performer-track.jpg" alt="Performer Track" />
-</div>
+</figure>
 
 This is the most intricate real-world relationship we model here. We relate to
 `Tracks` rather than `Albums` here because of the common cases of compilations

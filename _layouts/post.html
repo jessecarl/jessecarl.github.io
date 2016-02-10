@@ -1,18 +1,23 @@
 ---
 layout: default
 ---
-<div class="hero-unit"><div class="row-fluid">
-  {% if page.img %}
-    <span class="span5 thumbnail"><img src="{{ page.img }}" alt="" /></span>
-    <h1 class="span7">{{ page.title }} <small>{{ page.date | date_to_string }}</small></h1>
-  {% else %}
-    <h1 class="span12">{{ page.title }} <small>{{ page.date | date_to_string }}</small></h1>
-  {% endif %}
-</div></div>
-<div class="container row-fluid">
-  <div class="span7 offset2">
-    <div>{{ content }}</div>
-    <hr>
+<section class="blog-post-page">
+  <article class="blog-post" {% if page.img %}data-img="{{ page.img }}"{% endif %}>
+    <h1>{{ page.title }}</h1>
+    <p class="date">{{ page.date | date_to_string }}</p>
+    {{ content }}
+  </article>
+  <aside class="further-reading">
+    {% if site.related_posts %}
+      <h2>Related Posts</h2>
+      <ul>
+        {% for p in site.related_posts %}
+          <li><a href="{{ p.url }}">{{ p.title }} – {{ p.date | date_to_string }}</a></li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </aside>
+  <div class="comment-container">
     <div id="disqus_thread"></div>
     <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
@@ -28,14 +33,4 @@ layout: default
     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
   </div>
-  {% if site.related_posts %}
-    <div class="span3">
-      <h4>Related Posts</h4>
-      <ul>
-        {% for p in site.related_posts %}
-          <li><a href="{{ p.url }}">{{ p.title }} – {{ p.date | date_to_string }}</a></li>
-        {% endfor %}
-      </ul>
-    </div>
-  {% endif %}
-</div>
+</section>

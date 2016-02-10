@@ -28,9 +28,9 @@ It would allow offline testing, buffer against issues with the third-party,
 allow testing of edge-cases, and all without increasing the complexity of
 the code being tested. It's a project I do need to get back to at some point.
 
-<div class="thumbnail">
+<figure class="thumbnail">
   <img src="/img/posts/go-pubsub.jpg" alt="go-pubsub" />
-</div>
+</figure>
 
 The other project is [go-pubsub](https://github.com/jessecarl/go-pubsub), a
 simple package that sets up the core functionality of a message dispatch

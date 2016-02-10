@@ -9,13 +9,13 @@ In my quest for code adventure, I&#8217;ve decided to engage in a project with n
 
 ###The Inspiration
 
-<div class="thumbnail"><img src="http://farm6.static.flickr.com/5307/5668076737_fd349b9a6b.jpg" alt=""></div>
+<figure class="thumbnail"><img src="http://farm6.static.flickr.com/5307/5668076737_fd349b9a6b.jpg" alt=""></figure>
 
 As one who listens to music, and listens to it on vinyl as often as I can, I have observed that some of my record jackets are not holding up. Luckily, there are sources for blank record jackets and sleeves for fairly low prices. The question is, how do I know which record is which?
 
 ###The Solution
 
-<div class="thumbnail"><img src="http://farm6.static.flickr.com/5261/5668634290_2175ded08c.jpg" alt=""></div>
+<figure class="thumbnail"><img src="http://farm6.static.flickr.com/5261/5668634290_2175ded08c.jpg" alt=""></figure>
 
 I intend to build a simple web application to organize my record collection. I will be keeping track of the albums, the artists, the songs, and any other information I might find useful. In the second phase of the project, I will be able to print out labels for each of the records with all of the album info to place on blank jackets. The third phase of the project will be adding <a href="http://www.denso-wave.com/qrcode/index-e.html" title="QR Codes">QR codes</a> to the labels and building an android app to quickly grab additional information about each record. I have a few other ideas to extend this project, but it would be best to just tackle one small part at a time.
 

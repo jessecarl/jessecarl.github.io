@@ -10,9 +10,9 @@ interesting choices that I make. I have started building out the model classes
 as outlined in [The Basic Schema](/2011/05/20/the-basic-schema.html). The
 `Song`&#8211;`Creator` relationship was the first to be built.<!--more-->
 
-<div class="thumbnail">
+<figure class="thumbnail">
   <img src="/img/posts/song-creator.jpg" alt="Song Creator" />
-</div>
+</figure>
 
 In building these models, it became clear that the original thought was not
 quite clear. First, we have unneeded redundancy with the `Creator` and `Person`

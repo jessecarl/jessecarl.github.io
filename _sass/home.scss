@@ -366,7 +366,11 @@ article {
     font-size: 0.75em;
     font-style: normal;
     padding: 0.1em 0.4em;
-    white-space: nowrap;
+  }
+
+  pre code {
+    display: block;
+    overflow: auto;
   }
 
   h2 code {
@@ -769,4 +773,39 @@ article {
     color: $base-font-color;
   }
 
+}
+
+section.blog-post-page {
+  @include outer-container;
+
+  aside {
+
+    @include media($large-screen) {
+      @include span-columns(3);
+      @include omega;
+    }
+
+    li {
+      border-bottom: 1px solid transparentize($action-color, 0.8);
+      display: block;
+      margin-right: $base-spacing;
+      outline: none;
+      padding: ($base-spacing / 2) 0;
+
+      &:last-child {
+        margin-bottom: $base-spacing;
+      }
+    }
+  }
+
+  article {
+    @include media($large-screen) {
+      @include span-columns(6);
+      @include shift(3);
+    }
+  }
+
+  .comment-container {
+    @include clearfix;
+  }
 }
