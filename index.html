@@ -36,5 +36,25 @@ body_class: home
     {% include blog-post-cards-one-row.html %}
   </div>
 </section>
-<section id="contact">
+<section id="contact" class="contact">
+  <div class="contact-container">
+    <h1>Contact</h1>
+    <form action="https://getsimpleform.com/messages?form_api_token=f2e9ee5a3d0adfc9471e5133606ed6f3" method="post">
+      <!-- all your input fields here.... -->
+      <input type="hidden" name="redirect_to" value="http://jessecarl.github.io/thanks.html" />
+      <fieldset>
+        <span class="input-group"><label for="name">Name</label><input type="text" name="name" placeholder="Name" required /></span>
+        <span class="input-group"><label for="email">Email</label><input type="email" name="email" placeholder="Email" required /></span>
+        <span class="input-group"><label for="phone">Phone</label><input type="tel" name="phone" placeholder="Phone" /></span>
+      </fieldset>
+      <fieldset>
+        <legend>Services</legend>
+        <span class="checkbox-group"><input type="checkbox" name="services-consulting" value="consulting" id="services-consulting" /><label for="services-consulting">Web Consultation</label></span>
+        <span class="checkbox-group"><input type="checkbox" name="services-saas" value="saas" id="services-saas" /><label for="services-saas">SaaS Development</label></span>
+        <span class="checkbox-group"><input type="checkbox" name="services-debugging" value="debugging" id="services-debugging" /><label for="services-debugging">Debug and Troubleshoot</label></span>
+      </fieldset>
+      <div class="text-group"><label for="message">Message</label><textarea name="message" rows="5"></textarea></div>
+      <div class="button-group"><button type="submit" name="send">Send</button></div>
+    </form>
+  </div>
 </section>

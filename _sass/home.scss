@@ -2,6 +2,8 @@ $home-deep-blue: #95d5f1;
 $home-light-blue: #dbe9f5;
 $home-light-brown: #c78157;
 $home-deep-brown: #72291b;
+$medium-screen: em(640) !default;
+$large-screen: em(860) !default;
 
 section {
   @include padding(2em 1em 3em 1em);
@@ -705,4 +707,66 @@ article {
 
 .blog-post-pagination {
   text-align: center;
+}
+
+.contact {
+  $base-background-color: white !default;
+  $base-font-color: $dark-gray !default;
+  $medium-screen: em(640) !default;
+  $large-screen: em(860) !default;
+
+  background: $base-background-color;
+  color: $base-font-color;
+
+  .contact-container {
+    @include outer-container;
+  }
+
+  h1 {
+    color: $base-font-color;
+  }
+
+  form {
+    @include outer-container;
+    @include clearfix;
+  }
+
+  .input-group, .checkbox-group {
+    @include clearfix;
+    @include media($large-screen) {
+      @include span-columns(4);
+    }
+  }
+
+  .checkbox-group label {
+    display: inline;
+  }
+
+  :required {
+    border-color: lighten(#ff0000, 30%);
+
+    &:hover,
+    &:focus {
+      border-color: lighten(#ff0000, 40%);
+    }
+  }
+}
+
+.thanks {
+  $base-background-color: white !default;
+  $base-font-color: $dark-gray !default;
+  $medium-screen: em(640) !default;
+  $large-screen: em(860) !default;
+
+  background: $base-background-color;
+  color: $base-font-color;
+
+  .thanks-container {
+    @include outer-container;
+  }
+
+  h1 {
+    color: $base-font-color;
+  }
+
 }
