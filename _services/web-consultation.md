@@ -12,7 +12,7 @@ add up quickly. Money, time, and attention are too valuable for a small business
 to allow technology to consume too much. Technology is supposed to make our
 lives easier, not harder.
 
-##What are your goals?
+## What are your goals?
 
 The key focus of my web consulting is to identify how well your current web
 services are aligned to your business goals. A common mistake I see most
@@ -34,7 +34,7 @@ increase customer retention? What are your concrete, measurable goals for
 your business? Unless I know what your goals are, I cannot begin to identify
 where web services can help or hinder your business.
 
-##What web services do you currently have in place?
+## What web services do you currently have in place?
 
 <span>Do you have a website? Do you have social media accounts? Do you update
 them?</span>
@@ -52,7 +52,7 @@ or question the services. Both options need to be on the table. Ultimately,
 after some careful evaluation, we bring the business goals and the web services
 into alignment.
 
-##What web services are missing?
+## What web services are missing?
 
 <span>Where are the gaps in our goals?</span> Now that we have our well-defined
 goals, and know that the services we have are aligned with those goals, we need

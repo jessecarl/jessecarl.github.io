@@ -11,7 +11,7 @@ something has to change.</span> Too often, businesses suffer because the
 software packages, designed to work for a generic business, fail to handle
 the challenges unique to each business.
 
-##You probably do not need custom software
+## You probably do not need custom software
 
 The first step we will take in implementing a custom software as a service
 (SaaS) solution is to make sure you need one. For most of the seemingly
@@ -19,7 +19,7 @@ unique problems, there are common solutions. Sometimes having some help
 figuring out how to fit these common solutions to your business is all you
 will need.
 
-##Why SaaS?
+## Why SaaS?
 
 While building completely custom solutions sounds very tempting at first,
 the cost of ownership is just not worth it. You probably already have most
