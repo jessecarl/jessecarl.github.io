@@ -2,11 +2,13 @@ name: "Jesse Allen: Lazy Engineer"
 markdown: kramdown
 kramdown:
   input: GFM
+  hard_wrap: false
 highlighter: rouge
 gems:
   - jekyll-paginate
 paginate: 10
 paginate_path: "/blog/page:num/"
+permalink: /blog/:year/:month/:day/:title/
 excerpt_separator: <!--more-->
 sass:
   sass_dir: _sass
