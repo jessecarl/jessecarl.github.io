@@ -1,5 +1,7 @@
 name: "Jesse Allen: Lazy Engineer"
 markdown: kramdown
+kramdown:
+  input: GFM
 highlighter: rouge
 gems:
   - jekyll-paginate
