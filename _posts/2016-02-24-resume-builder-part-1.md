@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Resume Builder Part I
+title: Résumé Builder Part I
 date: 2016-02-24 17:00:00
 category:
   - consulting
