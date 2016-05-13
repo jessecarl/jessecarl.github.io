@@ -10,7 +10,7 @@ category:
 In [Part I]({% post_url 2016-02-24-resume-builder-part-1 %}), I introduced the
 tool and the data. In [Part II]({% post_url 2016-02-26-resume-builder-part-2 %}),
 I discussed how the tool interacts with the data. Today, I'll take some time to
-go through the command line interface for the tool.
+go through the command line interface for the tool.<!--more-->
 
 Any time I sit down to write a CLI, I try to think of a way to design it for
 standard streams. The simplicity and utility of a tool that listens to `stdin`
