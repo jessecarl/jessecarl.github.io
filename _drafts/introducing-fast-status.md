@@ -17,7 +17,7 @@ interrupt their work. [Fast Status](https://github.com/lazyengineering/faststatu
 is like a digital red bandanna.<!--more-->
 
 Probably the second or third time I read that chapter, I was working in a very
-typical environment for the modern creative coworker. I had a desk, one or two
+typical environment for the modern creative worker. I had a desk, one or two
 flimsy walls, and a tiny separator from the desk next to mine. The room was
 loud, or at least full of important conversations that needed to happen, but
 not for the work I was doing. While the noise was an issue, the convenience of
