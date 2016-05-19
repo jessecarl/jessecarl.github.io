@@ -13,7 +13,8 @@ process or technology. In Chapter 10, Brain Time and Body Time, the authors
 recounted an experience with a client company where they began to measure
 uninterrupted work time. At some point, the engineers began to display red
 bandannas on their desks to indicate that now might not be a good time to
-interrupt their work.<!--more-->
+interrupt their work. [Fast Status](https://github.com/lazyengineering/faststatus)
+is like a digital red bandanna.<!--more-->
 
 Probably the second or third time I read that chapter, I was working in a very
 typical environment for the modern creative coworker. I had a desk, one or two
