@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Introducing Fast Status
+date: 2016-05-19 15:05:00
 category:
   - saas
   - toolbuilding
