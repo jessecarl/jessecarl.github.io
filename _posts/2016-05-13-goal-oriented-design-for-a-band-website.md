@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Goal-Oriented Design for a Band Website
-date: 2016-02-29 16:00:00
-excerpt_separator: <!--more-->
+date: 2016-05-13 17:15:00
 category:
   - consulting
   - saas
