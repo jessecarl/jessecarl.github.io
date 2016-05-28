@@ -68,7 +68,7 @@ exactly what I want.
 
 I built it today, and there is at least one major design change that I have
 planned, but it works. The flags and a few other bits were pulled straight
-from [resume-update](https://github.com/jessecarl/resume/cmd/resume-update),
+from [resume-update](https://github.com/jessecarl/resume/tree/master/cmd/resume-update),
 with a little extra to work. I could go through what I’ve done here, but it
 would be very little more than what you could read on other posts here.
 Instead, I think I will save the good parts for next week. I hope to have
