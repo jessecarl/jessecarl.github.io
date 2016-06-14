@@ -1,7 +1,7 @@
 ---
 layout: "post"
 title: "Concurrent Portfolio Image Pipelines"
-date: "2016-06-01 16:30:00"
+date: "2016-06-14 14:20:00"
 category:
   - saas
   - toolbuilding
